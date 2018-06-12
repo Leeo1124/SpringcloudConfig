@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    active: dev
+  rabbitmq:
+    host: 47.96.173.142
+    port: 5672
+    username: guest
+    password: guest
+  redis:
+    host: 10.152.16.140
+    password: ^$9821_Au#*)
+    port: 26379
+    timeout: 0
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/gem?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+    initial-size: 10
+    min-idle: 10
+    max-active: 20
+    test-on-borrow: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:1111/eureka
