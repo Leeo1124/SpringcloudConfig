@@ -1,2 +1,2 @@
-sys:
-  local-upload-path: /data/upload/
+server:
+    port: 8050
